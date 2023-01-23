@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script by: Juan Rodríguez</title>
+    <script>
+        
+        const getPairs = (array) => { return array?.filter(a => a % 2 == 0); }
+
+        //Basicamente hay varias maneras para que JS no suelte error con los null
+        const array1 = [1,2,3,4,5,6,7,8,9];
+        const array2 = [100,22,30,40,57,67,71,80,90];
+        //Asignarle a una constante que puede ser null o un array
+        const array3 = null || [];
+        //Crear constante para guardar el null
+        const array4 = null;
+        //Ya despues de asignada la array a una constante, ya se puede poner un null
+        const array5 = [20,40,30,300,35,null,76,77,null,93,98];
+
+        const resultPairs1 = getPairs(array1); // [2, 4, 6, 8]
+        const resultPairs2 = getPairs(array2); // [100,22,30,40,80,90]
+        const resultPairs3 = getPairs(array3); // Valor Nulo o array vacia []
+        const resultPairs4 = getPairs(array4); // Valor Nulo declarado en una constante
+        const resultPairs5 = getPairs(array5); // Valor Nulo declarado en una array creada.
+
+        console.log(resultPairs1);
+        console.log(resultPairs2);
+        console.log(resultPairs3);
+        console.log(resultPairs4);
+        console.log(resultPairs5);
+
+        document.write(resultPairs1+"<br/>");
+        document.write(resultPairs2+"<br/>");
+        document.write(resultPairs3+"<br/>");
+        document.write(resultPairs4+"<br/>");
+        document.write(resultPairs5)+"<br/>";
+
+
+        //Se crea la constante get Primes para verificar cada numero de la array
+        const getPrimes = number => {
+	    // Casos especiales para un primo
+	    if (number == 0 || number == 1 || number == 4) return "No es primo";
+	        for (let x = 2; x < number / 2; x++) {
+		if (number % x == 0) return "No es primo";
+	    }
+	    // Si no hay ningun caso especial es numero Primo
+	    return "Es primo";
+        }
+
+        const resultPairs6 = [1, 2, 47, 51, 3, 37, 7, 97, 99, 1999];
+
+        //El forEach recorre toda la array y le agregamos la funcion de getPrimes para que identifique a todos los numeros.
+        resultPairs6.forEach(number => {
+	        console.log(number, getPrimes(number));
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

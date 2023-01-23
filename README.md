@@ -19,7 +19,7 @@ Hay varias formas para quitar el error del bloqueo null, en el archivo especific
 
 2.) Utiliza el mismo enfoque para crear una nueva función para obtener números primos.
 
-Aquí hice una función desde cero utilizando mis conocimientos matematicos, entonces primero hice que la función identificara si el numero es primo o no, ahí se hacen dos condiciones basicas con if y con for que permiten identificar si el numero es primo o no, si el numero pasa la prueba e identifica que es primo. ahora toca recorrer la array que se desee, esto se puede gracias al metodo forEach este recorre numero por numero la array y función finalizada.
+Aquí hice una función desde cero utilizando mis conocimientos matematicos, entonces primero hice que la función identificara si el numero es primo o no, ahí se hacen dos condiciones basicas con if y con for que permiten identificar si el numero es primo o no, si el numero pasa la prueba e identifica que es primo. ahora toca recorrer la array que se desee, esto se puede gracias al metodo forEach este recorre numero por numero la array y función finalizada. En el console.log se muestra el resultado de la función.
 
 ## Final
 
